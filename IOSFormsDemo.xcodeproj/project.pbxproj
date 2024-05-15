@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B130BEDA2BF52B5300D95824 /* ValidationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130BED92BF52B5300D95824 /* ValidationUtil.swift */; };
+		B130BEDE2BF5503600D95824 /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130BEDD2BF5503600D95824 /* NormalTextField.swift */; };
+		B130BEE02BF5509000D95824 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130BEDF2BF5509000D95824 /* PasswordTextField.swift */; };
+		B130BEE22BF550D700D95824 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130BEE12BF550D700D95824 /* PrimaryButton.swift */; };
+		B130BEE42BF5510E00D95824 /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B130BEE32BF5510E00D95824 /* TransparentButton.swift */; };
 		B1F1571C2BF4CAB1009673B0 /* IOSFormsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1571B2BF4CAB1009673B0 /* IOSFormsDemoApp.swift */; };
 		B1F1571E2BF4CAB1009673B0 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1571D2BF4CAB1009673B0 /* SplashScreen.swift */; };
 		B1F157202BF4CAB3009673B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F1571F2BF4CAB3009673B0 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B130BED92BF52B5300D95824 /* ValidationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtil.swift; sourceTree = "<group>"; };
+		B130BEDD2BF5503600D95824 /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
+		B130BEDF2BF5509000D95824 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		B130BEE12BF550D700D95824 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		B130BEE32BF5510E00D95824 /* TransparentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentButton.swift; sourceTree = "<group>"; };
 		B1F157182BF4CAB1009673B0 /* IOSFormsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSFormsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1571B2BF4CAB1009673B0 /* IOSFormsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSFormsDemoApp.swift; sourceTree = "<group>"; };
 		B1F1571D2BF4CAB1009673B0 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -74,6 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B130BED82BF52B3C00D95824 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B130BED92BF52B5300D95824 /* ValidationUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B130BEDB2BF54FBA00D95824 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1571D2BF4CAB1009673B0 /* SplashScreen.swift */,
+				B1F157452BF4DBCC009673B0 /* LoginScreenView.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		B130BEDC2BF54FDE00D95824 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				B130BEDD2BF5503600D95824 /* NormalTextField.swift */,
+				B130BEDF2BF5509000D95824 /* PasswordTextField.swift */,
+				B130BEE12BF550D700D95824 /* PrimaryButton.swift */,
+				B130BEE32BF5510E00D95824 /* TransparentButton.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		B1F1570F2BF4CAB1009673B0 = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +136,12 @@
 		B1F1571A2BF4CAB1009673B0 /* IOSFormsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B130BEDC2BF54FDE00D95824 /* components */,
+				B130BEDB2BF54FBA00D95824 /* presentation */,
+				B130BED82BF52B3C00D95824 /* util */,
 				B1F1571B2BF4CAB1009673B0 /* IOSFormsDemoApp.swift */,
-				B1F1571D2BF4CAB1009673B0 /* SplashScreen.swift */,
 				B1F1571F2BF4CAB3009673B0 /* Assets.xcassets */,
 				B1F157212BF4CAB3009673B0 /* Preview Content */,
-				B1F157452BF4DBCC009673B0 /* LoginScreenView.swift */,
 			);
 			path = IOSFormsDemo;
 			sourceTree = "<group>";
@@ -262,7 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B130BEE42BF5510E00D95824 /* TransparentButton.swift in Sources */,
+				B130BEDE2BF5503600D95824 /* NormalTextField.swift in Sources */,
+				B130BEDA2BF52B5300D95824 /* ValidationUtil.swift in Sources */,
+				B130BEE02BF5509000D95824 /* PasswordTextField.swift in Sources */,
 				B1F1571E2BF4CAB1009673B0 /* SplashScreen.swift in Sources */,
+				B130BEE22BF550D700D95824 /* PrimaryButton.swift in Sources */,
 				B1F157462BF4DBCC009673B0 /* LoginScreenView.swift in Sources */,
 				B1F1571C2BF4CAB1009673B0 /* IOSFormsDemoApp.swift in Sources */,
 			);
